@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+<TextView
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:textSize="20sp"
+    android:background="#FFF94C87"
+    android:textColor="@android:color/white"
+    android:text="登陆"/>
+    <LinearLayout
+        android:padding="10dp"
+        android:id="@+id/l1"
+        android:layout_marginTop="130dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/user"
+            android:hint="账号"
+            android:layout_width="match_parent"
+
+            android:layout_height="40dp" />
+        <EditText
+            android:id="@+id/password"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/l2"
+        android:gravity="center"
+        android:layout_below="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消"/>
+        <View
+            android:layout_width="50dp"
+            android:layout_height="2dp">
+
+        </View>
+          <Button
+              android:id="@+id/login"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="登陆"/>
+    </LinearLayout>
+
+</RelativeLayout>
